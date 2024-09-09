@@ -1,4 +1,6 @@
 # Comments on setting up system; Ubuntu 24 Noble; ROS2 Jazzy & Gazebo sim
-install ubuntu 24.04 on 50 gb vritual machine
-install jazzy following instructions on official ROS website (run commands one by one)
-install Gazebo Harmonic from official website; sudo apt-get install gz-harmonic, sudo export QT_QPA_PLATFORM=xcb, export QT_QPA_PLATFORM=xcb, then to run gazebo gz sim
+// install ubuntu 24.04 on 50 gb vritual machine
+// install jazzy following instructions on official ROS website (run commands one by one)
+// install Gazebo Harmonic from official website; export ROS_DISTRO=jazzy;
+sudo apt-get install ros-${ROS_DISTRO}-gz-tools-vendor ros-${ROS_DISTRO}-gz-sim-vendor
+// to run gazebo sim; . /opt/ros/jazzy/setup.bash ; export QT_QPA_PLATFORM=xcb ; gz sim
